@@ -12,6 +12,88 @@
             box-sizing: border-box;
             /* font-family: ; */
         }
+        header{
+            background-color: rgb(178, 218, 122);
+            color: rgb(209, 213, 126);
+            padding: 10px;
+        }
+        .nav{
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .menu{
+            color: black;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 12px;
+        }
+        .hero{
+            background-color: azure;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .container{
+            width: 1000px;
+            margin: auto;
+            padding: 30px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+        }
+        .card{
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover{
+            transform: translate(-3px);
+        }
+        .card-img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body{
+            padding:15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .price{
+            font-size: 10px;
+            font-weight: 100px;
+            margin-top: 4px;
+        }
+        .btn{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 14px;
+            background: #111;
+            color: azure;
+            text-decoration: none;
+            font-size: 10px;
+            border-radius: 20px;
+        }
+        .footer{
+            margin-top: 60px;
+            background:  rgb(178, 218, 122);
+            color: #111;
+            text-align: center;
+            padding: 30px;
+            font-size: 10px;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +123,7 @@
     <!--260411 recommend-->
     <div class="container">
         <h2 style="margin-bottom: 20px;">추천 상품 항목</h2>
-    </div>
+    
 
     <!--260411 recommend-->
     <div class="grid">
@@ -115,6 +197,7 @@
                 <p class="price">상품가격 영역</p>
                 <a class="btn" href="#">view</a>
             </div>
+        </div>
         </div>
     </div>
     <!--260411 footer-->
